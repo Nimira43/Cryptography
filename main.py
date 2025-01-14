@@ -23,4 +23,13 @@ def caesar_decrypt(cipher_text):
 if __name__ == '__main__':
   message = 'Cryptography is the practise and study of techniques for secure communication in the presence of adversarial behaviour. More generally, cryptography is about constructing and analysing protocols that prevent third parties or the public from reading private messages'
 
-  print(caesar_encrypt(message))
+  encrypted = caesar_encrypt(message)
+  decrypted = caesar_decrypt(encrypted)
+
+  print('------------------------------------------------------------------------------------------------------------------')
+  print('Original:- ', message)
+  print('------------------------------------------------------------------------------------------------------------------')
+  print('Encrypted:- ', encrypted)
+  print('------------------------------------------------------------------------------------------------------------------')
+  print('Decrypted:- ', decrypted)
+  print('------------------------------------------------------------------------------------------------------------------')
